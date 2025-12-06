@@ -1,0 +1,12 @@
+codi: tarea de analizar un documento css enlazado a un html. resumir
+
+---
+montaje (nueva RA): pantallas, periféricos, OLED QLED...
+aplicacions web: prácticas XAMPP wordpress mysql
+monolloc: comandos básicos de linux
+xarxes: medios de transporte 1/2 bits, bytes...
+
+---tasques
+montaje: monitores
+ofi: 2 tasques gimp
+codi: la que no terminó de entregar, y la de css (madrid)
