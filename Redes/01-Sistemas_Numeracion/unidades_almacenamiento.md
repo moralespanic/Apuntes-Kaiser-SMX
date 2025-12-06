@@ -58,17 +58,36 @@ Pero, para ser más "accesible al público", Windows estandarizó lo siguiente:
 
 Lo cual no es correcto... Windows representa valores de **base 2** (`1024`) con unidades de **base 10** (`GB, MB, KB...`).
 
-Esto se ha estandarizado tanto, que hoy en día, en el lenguaje coloquial, e incluso profesional, se utiliza esta forma de representar los valores. Aunque no sea correcto.
+Esto se ha estandarizado tanto, que hoy en día, en el lenguaje coloquial, e incluso profesional, se utiliza esta forma de representar los valores. Aunque no sea la forma correcta.
 
-Pero bueno... como nosotros estamos aquí para seguir las órdenes de los profes, vamos a seguir la *tradición* de Windows, y representar valores de base 2 con unidades de base 10.
+Pero bueno... como nosotros estamos aquí para seguir las órdenes de los profes y no cuestionarlos, vamos a seguir la *tradición* de Windows, y representar valores de **base 2** (binarios) con unidades de **base 10** (decimales).
 
 ## Tabla de definición
 
 | Unidad de almacenamiento de datos |         Tamaño por unidad                |
 |:---------------------------------:|:-----------------------------------------|
-| Bit (**b**)                       | Un valor único, que puede ser 0 o 1      |
+| Bit (**b**)                       | Un valor único, que puede ser `0` o `1`  |
 | Byte (**B**)                      | Un conjunto de 8 bits (p.ej. `10010011`) |
 | Kilobyte (**KB**)                 | 1024 Bytes                               |
 | Megabyte (**MB**)                 | 1024 Kilobytes                           |
 | Gigabyte (**GB**)                 | 1024 Megabytes                           |
 | Terabyte (**TB**)                 | 1024 Gigabytes                           |
+
+## Tabla de conversión
+
+Cosas a tener en cuenta:
+
+* Movimiento vertical:
+    - Si subes, **divide entre `1024`**
+    - Si bajas, **multiplica por `1024`**
+* Movimiento horizontal:
+    - Si saltas de **bit** a **byte**, **divide ente `8`**
+    - Si saltas de **byte** a **bit**, **multiplica por `8`**
+
+| Unidad (**bit**) | Valor en bits                 | Unidad (**byte**) | Valor en bytes               |
+|------------------|-------------------------------|-------------------|------------------------------|
+| 1 b              | 1 b                           | 1 B               | 1 B                          |
+| 1 Kb             | 1 024 b                       | 1 KB              | 1 024 B                      |
+| 1 Mb             | 1 024 Kb                      | 1 MB              | 1 024 KB                     |
+| 1 Gb             | 1 024 Mb                      | 1 GB              | 1 024 MB                     |
+| 1 Tb             | 1 024 Gb                      | 1 TB              | 1 024 GB                     |
