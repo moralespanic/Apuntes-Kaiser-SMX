@@ -40,17 +40,35 @@ Un byte (representado con `**B**`) equivale a `8 bits`.
 
 1 000 ÷ 8 = 125 B
 
-## Ejemplos combinados
-### Ejemplo 1
-Archivo de 2 KB → ¿cuántos bits son?  
+# Almacenamiento de archivos
 
-2 KB = 2 × 1 024 B = 2 048 B  
+Por definición técnica, esto es lo correcto:
 
-2 048 B × 8 = 16 384 b
+```
+Base 2: 1 GiB (gibibyte) = 1024 MiB (mebibyte)
 
-### Ejemplo 2
-Conexión de 5 Mb → ¿cuántos bytes son?
+Base 10: 1 GB (gigabyte) = 1000 MB (megabyte)
+```
 
-5 Mb = 5 × 1 000 000 b = 5 000 000 b  
+Pero, para ser más "accesible al público", Windows estandarizó lo siguiente:
 
-5 000 000 ÷ 8 = 625 000 B
+```
+1 GB (gigabyte) = 1024 MB (megabyte)
+```
+
+Lo cual no es correcto... Windows representa valores de **base 2** (`1024`) con unidades de **base 10** (`GB, MB, KB...`).
+
+Esto se ha estandarizado tanto, que hoy en día, en el lenguaje coloquial, e incluso profesional, se utiliza esta forma de representar los valores. Aunque no sea correcto.
+
+Pero bueno... como nosotros estamos aquí para seguir las órdenes de los profes, vamos a seguir la *tradición* de Windows, y representar valores de base 2 con unidades de base 10.
+
+## Tabla de definición
+
+| Unidad de almacenamiento de datos |         Tamaño por unidad                |
+|:---------------------------------:|:-----------------------------------------|
+| Bit (**b**)                       | Un valor único, que puede ser 0 o 1      |
+| Byte (**B**)                      | Un conjunto de 8 bits (p.ej. `10010011`) |
+| Kilobyte (**KB**)                 | 1024 Bytes                               |
+| Megabyte (**MB**)                 | 1024 Kilobytes                           |
+| Gigabyte (**GB**)                 | 1024 Megabytes                           |
+| Terabyte (**TB**)                 | 1024 Gigabytes                           |
