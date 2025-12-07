@@ -64,7 +64,7 @@ Pero bueno... como nosotros estamos aquí para seguir las órdenes de los profes
 
 ## Tabla de definición
 
-| Unidad de almacenamiento de datos |         Tamaño por unidad                |
+| Unidad de almacenamiento de datos |       Tamaño / Definición                |
 |:---------------------------------:|:-----------------------------------------|
 | Bit (**b**)                       | Un valor único, que puede ser `0` o `1`  |
 | Byte (**B**)                      | Un conjunto de 8 bits (p.ej. `10010011`) |
@@ -84,7 +84,7 @@ Cosas a tener en cuenta:
     - Si saltas de **bit** a **byte**, **divide ente `8`**
     - Si saltas de **byte** a **bit**, **multiplica por `8`**
 
-| Unidad (**bit**) | Valor en bits                 | Unidad (**byte**) | Valor en bytes               |
+| Unidad (**bit**) | Valor                         | Unidad (**byte**) | Valor                        |
 |------------------|-------------------------------|-------------------|------------------------------|
 | 1 b              | 1 b                           | 1 B               | 1 B                          |
 | 1 Kb             | 1 024 b                       | 1 KB              | 1 024 B                      |
